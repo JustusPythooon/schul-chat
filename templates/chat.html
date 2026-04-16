@@ -1,0 +1,11 @@
+
+<body data-user="{{user}}">
+<h3>Chats</h3>
+{% for u in users %}
+  <div onclick="join('private_'+u)">{{ u }}</div>
+{% endfor %}
+<div id="chat"></div>
+<input id="msg"><button onclick="send()">Send</button>
+https://cdn.socket.io/4.7.2/socket.io.min.js
+<script src="/static/chat.js"></script>
+</body>
